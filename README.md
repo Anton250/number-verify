@@ -36,8 +36,8 @@ number_verify.setMask(mask);//this method sets the mask
 document.body.appendChild(number_verify);
 ```
 ## Methods
-`.setMask(mask)` - method that sets the mask. Where mask is string with mask [values](#values-of-mask).
-`.setCellIncorrect(position)` - method that sets cell in incorrect position (red border) and shows the error text by default: `Неверный номер, попробуйте ещё раз`. Where parameter position is position of input cell that you want to show like incorrect.
-`.setErrorText(text)` - method that sets error text.
-`.clearAll()` - method that clears all cells and error messages.
+- `.setMask(mask)` - method that sets the mask. Where mask is string with mask [values](#values-of-mask).
+- `.setCellIncorrect(position)` - method that sets cell in incorrect position (red border) and shows the error text by default: `Неверный номер, попробуйте ещё раз`. Where parameter position is position of input cell that you want to show like incorrect.
+- `.setErrorText(text)` - method that sets error text.
+- `.clearAll()` - method that clears all cells and error messages.
 
