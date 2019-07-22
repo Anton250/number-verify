@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mail.ru Task</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+
+    <script src="https://cdn.rawgit.com/webcomponents/webcomponentsjs/v0.7.24/webcomponents-lite.js"></script>
+    <script src="number-verify.js"></script>
+    <number-verify mask="+7(925)5II-I*-45" number-error-text="Error"></number-verify>
+    <button onclick="showIncorrect()">Show incorrect</button>
+    <button onclick="clearAll()">Clear</button>
+    <script>
+        var correct = 0;
+        let number_verify = document.querySelector("number-verify");
+        function showIncorrect(){
+            for (var i = 0; i < 3; i++){
+                number_verify.setCellIncorrect(i);
+            }
+        }
+
+        function clearAll(){
+            number_verify.clearAll();
+        }
+    </script>
+</body>
+
+</html>
