@@ -31,7 +31,7 @@ To use this component with html-tag you need to write attribute named 'mask'.
 Also you can create number-verify object in your JavaScript code:
 ```js
 const mask = "+9(890)II9-**-***";
-var number-verify = new number_verify();
+var number_verify = new numberVerify();
 number_verify.setMask(mask);//this method sets the mask
 document.body.appendChild(number_verify);
 ```
